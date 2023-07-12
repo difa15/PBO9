@@ -1,6 +1,6 @@
 public abstract class Peminjam implements UserLogin {
     private boolean isLogin;
-
+    private boolean isAntiDenda;
     @Override
     public void doLogin(){
         isLogin = true;
@@ -17,4 +17,7 @@ public abstract class Peminjam implements UserLogin {
     public abstract String getKodePeminjam();
     public abstract void setNamaPeminjam(String namaPeminjam);
     public abstract String getNamaPeminjam();
+    public abstract void isAntiDenda();
+    public abstract void removeAntiDenda();
+    public abstract boolean getAntiDenda();
 }
