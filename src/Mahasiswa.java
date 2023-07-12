@@ -18,4 +18,19 @@ public class Mahasiswa extends Peminjam {
     public String getNamaPeminjam(){
         return namaMhs;
     }
+    @Override
+    public void isAntiDenda() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'isAntiDenda'");
+    }
+    @Override
+    public void removeAntiDenda() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'removeAntiDenda'");
+    }
+    @Override
+    public boolean getAntiDenda() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getAntiDenda'");
+    }
 }
