@@ -21,8 +21,26 @@ public class Main {
 
         System.out.println("Peminjam: " + peminjaman1.getPeminjam().getNamaPeminjam());
         System.out.println("Kode Peminjam: " + peminjaman1.getPeminjam().getKodePeminjam());
-        System.out.println("Petugas: " + peminjaman1.getPetugas().getNamaPetugas());
+        System.out.println("Nama Petugas: " + peminjaman1.getPetugas().getNamaPetugas());
         System.out.println("Buku: "+peminjaman1.getBuku().getNamaBuku());
+        Denda denda1 = new Denda(peminjaman1, );
+        System.out.println("Tagihan Denda:" + denda1.getTagihan());
+        System.out.println("================");
+        Peminjaman peminjaman2 = new Peminjaman(peminjam2, petugas1, buku3);
+        System.out.println("Peminjam: " + peminjaman2.getPeminjam().getNamaPeminjam());
+        System.out.println("Kode Peminjam: " + peminjaman2.getPeminjam().getKodePeminjam());
+        System.out.println("Nama Petugas: " + peminjaman2.getPetugas().getNamaPetugas());
+        System.out.println("Buku: "+peminjaman2.getBuku().getNamaBuku());
+        Denda denda2 = new Denda(peminjaman2, );
+        System.out.println("Tagihan Denda:" + denda2.getTagihan());
+        
+        System.out.println("Denda dihapuskan");
+        peminjam2.addAntiDenda();
+
+        System.out.println("Tagihan Denda: "+ denda2.getTagihan());
+        System.out.println(" Denda ditambahkan");
+        peminjam2.removeAntiDenda();
+        
     }catch(Exception e){
         System.out.println("Terjadi Kesalahan" + e.getMessage());
     }finally {
